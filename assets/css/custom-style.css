@@ -1,0 +1,99 @@
+/* Popup Box Styles */
+
+a.hoverbox-popup {
+    cursor: help;
+    text-decoration: none;
+    border-bottom: 1px dashed #888;
+}
+
+a.hoverbox-popup:focus, a.hoverbox-popup:visited {
+  outline: none; 
+}
+
+.mfp-inline-holder .mfp-content {
+    padding: 10px 15px;
+    background: #fff;
+    width: 80%;
+    max-width: 500px; 
+    border: 10px solid #686868; 
+}
+
+.mfp-content p {
+    font-size: 12px; 
+}
+
+.mfp-content footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.mfp-close {
+    font-size: 40px; 
+}
+
+.mfp-close:hover {
+    background: transparent; 
+}
+
+.mfp-close, .mfp-close:active {
+    top: 5px;
+}
+
+.mfp-close:visited, .mfp-close:focus {
+  outline: none; 
+}
+
+#facebox .b {
+  background:url(assets/b.png);
+}
+
+#facebox .tl {
+  background:url(assets/tl.png);
+}
+
+#facebox .tr {
+  background:url(assets/tr.png);
+}
+
+#facebox .bl {
+  background:url(assets/bl.png);
+}
+
+#facebox .br {
+  background:url(assets/br.png);
+}
+
+/*Animations*/
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all .30s ease-out;
+  -moz-transition: all .30s ease-out;
+  transition: all .30s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all .30s ease-out;
+  -moz-transition: all .30s ease-out;
+  transition: all .30s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
